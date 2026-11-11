@@ -3,48 +3,351 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Portfolio</title>
+    <title>Gallery Desktop UI</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section>
-      <h1>tymoteusz bilski</h1>
-      <p>my selected works</p>
-    </section>
     <main>
-      <div class="column">
-        <div>
-          <img src="./items/pani_zabila_pana.png" />
+      <section class="view is-active" id="title">
+        <h1 class="name">Tymoteusz <br />Bilski</h1>
+        <p class="email">tymekbilski@gmail.com</p>
+        <div class="contact">
+          <img
+            class="icon"
+            id="envelope"
+            src="icons/envelope.svg"
+            alt="Email"
+          />
         </div>
-        <div id="logo">
-          <img src="./items/harnas_odrowaz.png" />
+        <button class="open_gallery_button" type="button">G A L L E R Y</button>
+      </section>
+
+      <section class="view gallery_slide">
+        <!-- Desktop preview button -->
+        <button class="gallery_button" type="button">
+          <span>C L I C K</span>
+
+          <div class="details_short">
+            <h2 class="project_name">remiza party</h2>
+            <h3 class="tools">canva · affinity · meta</h3>
+          </div>
+
+          <img
+            class="gallery_item"
+            src="./items/remiza_party/main_poster.png"
+            alt="Remiza Party poster"
+          />
+        </button>
+
+        <!-- Carousel -->
+        <div class="items_carousel">
+          <button
+            class="carousel_arrow"
+            id="carousel_button_previous"
+            aria-label="Previous slide"
+          >
+            <img
+              class="icon"
+              id="arrow_left"
+              src="icons/arrow.svg"
+              alt="Arrow"
+            />
+            <img
+              class="icon"
+              id="arrow_left_h"
+              src="icons/arrow_highlight.svg"
+              alt="Arrow"
+            />
+          </button>
+          <button
+            class="carousel_arrow"
+            id="carousel_button_next"
+            aria-label="Next slide"
+          >
+            <img
+              class="icon"
+              id="arrow_right"
+              src="icons/arrow.svg"
+              alt="Arrow"
+            />
+            <img
+              class="icon"
+              id="arrow_right_h"
+              src="icons/arrow_highlight.svg"
+              alt="Arrow"
+            />
+          </button>
+          <!-- FIRST TILE: Project details -->
+          <div class="details_and_nav">
+            <div class="details_long">
+              <h2 class="project_name">remiza party</h2>
+              <h3 class="tools">canva · affinity · meta</h3>
+
+              <p class="description">
+                posters, covers and posts made for an 80's style party in remiza
+              </p>
+
+              <p class="description">
+                whole marketing and social media presence of the event was
+                established in particular style
+              </p>
+
+              <p class="description">
+                I designed extras, promotional materials, gadgets, whole graphic
+                side of the endeavour
+              </p>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="gallery_nav" aria-label="Gallery navigation">
+              <button class="nav_button previous_button" type="button">
+                ←
+              </button>
+              <button class="nav_button menu_button" type="button">MENU</button>
+              <button class="nav_button next_button" type="button">→</button>
+            </nav>
+          </div>
+
+          <!-- SECOND TILE: Image 1 -->
+          <img
+            class="gallery_item"
+            src="./items/remiza_party/main_poster.png"
+            alt="Remiza Party poster"
+          />
+
+          <!-- THIRD TILE: Image 2 -->
+          <img
+            class="gallery_item"
+            src="./items/remiza_party/event_cover.png"
+            alt="Remiza Party event cover"
+          />
+
+          <!-- FOURTH TILE: Image 3 -->
+          <img
+            class="gallery_item"
+            src="./items/remiza_party/1tyg.png"
+            alt="Remiza Party promotional graphic"
+          />
+
+          <!-- FIFTH TILE: Image 4 -->
+          <img
+            class="gallery_item"
+            src="./items/remiza_party/steal_his_look_2.png"
+            alt="Remiza Party promotional graphic"
+          />
         </div>
-        <div>
-          <img src="./items/dziadkowie.png" />
+      </section>
+
+      <section class="view gallery_slide" aria-hidden="true">
+        <!-- Desktop preview button -->
+        <button class="gallery_button" type="button">
+          <span>C L I C K</span>
+
+          <div class="details_short">
+            <h2 class="project_name">comics</h2>
+            <h3 class="tools">krita · pen & paper</h3>
+          </div>
+
+          <img
+            class="gallery_item"
+            src="./items/comic/pig_drummer.png"
+            alt="Comic illustration"
+          />
+        </button>
+
+        <!-- Carousel -->
+        <div class="items_carousel">
+          <button
+            class="carousel_arrow"
+            id="carousel_button_previous"
+            aria-label="Previous slide"
+          >
+            <img
+              class="icon"
+              id="arrow_left"
+              src="icons/arrow.svg"
+              alt="Arrow"
+            />
+            <img
+              class="icon"
+              id="arrow_left_h"
+              src="icons/arrow_highlight.svg"
+              alt="Arrow"
+            />
+          </button>
+          <button
+            class="carousel_arrow"
+            id="carousel_button_next"
+            aria-label="Next slide"
+          >
+            <img
+              class="icon"
+              id="arrow_right"
+              src="icons/arrow.svg"
+              alt="Arrow"
+            />
+            <img
+              class="icon"
+              id="arrow_right_h"
+              src="icons/arrow_highlight.svg"
+              alt="Arrow"
+            />
+          </button>
+          <!-- FIRST TILE: Project details -->
+          <div class="details_and_nav">
+            <div class="details_long">
+              <h2 class="project_name">comics</h2>
+              <h3 class="tools">krita · pen & paper</h3>
+
+              <p class="description">
+                The major use of blacks and shadows, sharp edges and apparent
+                simplicity of forms.
+              </p>
+
+              <p class="description">
+                I'm inspired by artists like Mike Mignola and Chris Bourassa
+                whom had the major impact on my interest in such style.
+              </p>
+            </div>
+            <!-- Navigation -->
+            <nav class="gallery_nav" aria-label="Gallery navigation">
+              <button class="nav_button previous_button" type="button">
+                ←
+              </button>
+              <button class="nav_button menu_button" type="button">MENU</button>
+              <button class="nav_button next_button" type="button">→</button>
+            </nav>
+          </div>
+
+          <!-- SECOND TILE: Image 1 -->
+          <img
+            class="gallery_item"
+            src="./items/comic/pig_drummer.png"
+            alt="Comic illustration"
+          />
+
+          <!-- THIRD TILE: Image 2 -->
+          <img
+            class="gallery_item"
+            src="./items/comic/panizabilapana.png"
+            alt="Comic illustration"
+          />
+
+          <!-- FOURTH TILE: Image 3 -->
+          <img
+            class="gallery_item"
+            src="./items/comic/harnasOdrowaz.png"
+            alt="Comic illustration"
+          />
         </div>
-      </div>
-      <div class="column">
-        <div>
-          <img src="./items/medusa.png" />
+      </section>
+
+      <section class="view gallery_slide" aria-hidden="true">
+        <!-- Desktop preview button -->
+        <button class="gallery_button" type="button">
+          <span>C L I C K</span>
+
+          <div class="details_short">
+            <h2 class="project_name">digital painting</h2>
+            <h3 class="tools">krita</h3>
+          </div>
+
+          <img
+            class="gallery_item"
+            src="./items/digital_painting/sitting_pose.png"
+            alt="Digital painting"
+          />
+        </button>
+
+        <!-- Carousel -->
+        <div class="items_carousel">
+          <button
+            class="carousel_arrow"
+            id="carousel_button_previous"
+            aria-label="Previous slide"
+          >
+            <img
+              class="icon"
+              id="arrow_left"
+              src="icons/arrow.svg"
+              alt="Arrow"
+            />
+            <img
+              class="icon"
+              id="arrow_left_h"
+              src="icons/arrow_highlight.svg"
+              alt="Arrow"
+            />
+          </button>
+          <button
+            class="carousel_arrow"
+            id="carousel_button_next"
+            aria-label="Next slide"
+          >
+            <img
+              class="icon"
+              id="arrow_right"
+              src="icons/arrow.svg"
+              alt="Arrow"
+            />
+            <img
+              class="icon"
+              id="arrow_right_h"
+              src="icons/arrow_highlight.svg"
+              alt="Arrow"
+            />
+          </button>
+          <!-- FIRST TILE: Project details -->
+          <div class="details_and_nav">
+            <div class="details_long">
+              <h2 class="project_name">digital painting</h2>
+              <h3 class="tools">krita</h3>
+
+              <p class="description">
+                Painting the human figure most of the time.
+              </p>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="gallery_nav" aria-label="Gallery navigation">
+              <button class="nav_button previous_button" type="button">
+                ←
+              </button>
+              <button class="nav_button menu_button" type="button">MENU</button>
+              <button class="nav_button next_button" type="button">→</button>
+            </nav>
+          </div>
+
+          <!-- SECOND TILE: Image 1 -->
+          <img
+            class="gallery_item"
+            src="./items/digital_painting/sitting_pose.png"
+            alt="Digital painting"
+          />
+
+          <!-- THIRD TILE: Image 2 -->
+          <img
+            class="gallery_item"
+            src="./items/digital_painting/gb.png"
+            alt="Digital painting"
+          />
+
+          <!-- FOURTH TILE: Image 3 -->
+          <img
+            class="gallery_item"
+            src="./items/digital_painting/act.png"
+            alt="Digital painting"
+          />
+
+          <!-- FIFTH TILE: Image 4 -->
+          <img
+            class="gallery_item"
+            src="./items/digital_painting/medusa.png"
+            alt="Digital painting"
+          />
         </div>
-        <div>
-          <img src="./items/shieldbreaker.png" />
-        </div>
-        <div>
-          <img src="./items/vestal.png" />
-        </div>
-      </div>
-      <div class="column">
-        <div>
-          <img src="./items/pig_drummer.png" />
-        </div>
-        <div>
-          <img src="./items/gurole.png" />
-        </div>
-        <div>
-          <img src="./items/face.png" />
-        </div>
-      </div>
+      </section>
     </main>
+    <script src="app.js" defer></script>
   </body>
 </html>
